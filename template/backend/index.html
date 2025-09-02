@@ -25,17 +25,17 @@
                   <li class="nav-item dropdown">
                      <a role="button" data-bs-toggle="dropdown" href="#dropdownLang" class="nav-link d-flex align-items-center text-capitalize h-100 dropdown-toggle">
                         <i class="link-flag"></i>
-                        <span class="link-text">language</span>
+                        <span id="currentLang" class="link-text" data-i18n="navlangTitle">english</span>
                      </a>
                      <ul class="dropdown-menu shadow dropdown-menu-end" id="dropdownLang">
                         <li>
-                           <a href="#" class="dropdown-item d-flex align-items-center gap-2 text-capitalize">
+                           <a data-lang="en" href="#" class="dropdown-item d-flex align-items-center gap-2 text-capitalize">
                               <i class="link-flag"></i>
                               <span class="link-text">english</span>
                            </a>
                         </li>
                         <li>
-                           <a href="#" class="dropdown-item d-flex align-items-center gap-2 text-capitalize">
+                           <a data-lang="id" href="#" class="dropdown-item d-flex align-items-center gap-2 text-capitalize">
                               <i class="link-flag"></i>
                               <span class="link-text">indonesia</span>
                            </a>
@@ -312,7 +312,7 @@
       <div class="container-fluid px-3 px-sm-4 px-lg-5">
          <hr>
          <p class="text-center text-lg-start mb-4 small">
-            <span class="opacity-50">Develop by</span> <span>&#128148;</span> <span class="opacity-50">INDRACODEV</span> <span class="opacity-50">&copy; <script>document.write(new Date().getFullYear())</script> PATROL. All rights reserved</span>
+            <span class="opacity-50">Develop by</span> &#128148; <span class="opacity-50">INDRACODEV</span> &copy;<script>document.write(new Date().getFullYear())</script> PATROL. <span data-i18n="copyright" class="opacity-50">All rights reserved</span>
          </p>
       </div><!-- end container -->
    </footer><!-- end page footer -->
@@ -320,6 +320,7 @@
    <script src="js/jquery-3.7.1.min.js"></script>
    <script src="js/bootstrap.bundle.min.js"></script>
    <script src="js/themeSwitcher.js"></script>
+   <script src="js/lang.js"></script>
    <script src="js/scripts.js"></script>
 </body>
 </html>
