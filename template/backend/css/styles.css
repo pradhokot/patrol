@@ -1,0 +1,49 @@
+:root {
+   @media (min-width: 992px) {
+      --sidebar-width: 250px;
+   }
+}
+
+:root,
+[data-bs-theme=light] {
+   --background: #f1f2f2;
+}
+
+[data-bs-theme=dark] {
+   --background: #272b2e;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100dvh;
+   row-gap: 1rem;
+   background-color: var(--background);
+}
+
+header[aria-label="page header"] {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   z-index: 1020;
+}
+
+#accordionMenu .accordion-button svg {
+   fill: #1189cc;
+}
+
+@media (min-width: 992px) {
+   header[aria-label="page header"] {
+      position: -webkit-static;
+      position: static;
+   }
+
+   body {
+      row-gap: 2rem;
+   }
+
+   .navbar-brand,
+   #accordionMenu {
+      min-width: var(--sidebar-width);
+   }
+}
