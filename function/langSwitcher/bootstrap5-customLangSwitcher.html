@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+   <ul class="navbar-nav ms-lg-auto">
+      <li class="nav-item dropdown">
+         <a role="button" data-bs-toggle="dropdown" href="#dropdownLang"
+            class="nav-link d-flex align-items-center text-capitalize h-100 dropdown-toggle">
+            <span id="currentLang" class="link-text" data-i18n="navlangTitle"></span>
+         </a>
+         <ul class="dropdown-menu shadow dropdown-menu-end" id="dropdownLang">
+            <li>
+               <a lang="en" data-lang="en" href="#"
+                  class="dropdown-item d-flex align-items-center gap-2 text-capitalize">
+                  <span class="link-text">english</span>
+               </a>
+            </li>
+            <li>
+               <div class="dropdown-divider"></div>
+            </li>
+            <li>
+               <a lang="id" data-lang="id" href="#"
+                  class="dropdown-item d-flex align-items-center gap-2 text-capitalize">
+                  <span class="link-text">indonesia</span>
+               </a>
+            </li>
+         </ul>
+      </li>
+   </ul>
+
+   <script>
+      // lang.js
+      const translations = {
+         en: { navlangTitle: "english", copyright: "All rights reserved", developBy: "Developed by" },
+         id: { navlangTitle: "indonesia", copyright: "Semua hak dilindungi", developBy: "Dikembangkan oleh" }
+      };
+
+      // Fungsi untuk apply translasi
+      function applyTranslations(lang) {
+         $("[data-i18n]").each(function () {
+            const key = $(this).data("i18n");
+            if (translations[lang] && translations[lang][key]) {
+               $(this).text(translations[lang][key]);
+            }
+         });
+
+         // Ubah label dropdown utama
+         $("#currentLang").text(translations[lang].navlangTitle);
+      }
+
+      $(function () {
+         // Cek apakah ada bahasa tersimpan di localStorage
+         let savedLang = localStorage.getItem("lang") || "id";
+
+         // Terapkan bahasa awal
+         applyTranslations(savedLang);
+
+         // Event klik dropdown item
+         $("[data-lang]").on("click", function (e) {
+            e.preventDefault();
+            const lang = $(this).data("lang");
+
+            // Terapkan translasi
+            applyTranslations(lang);
+
+            // Simpan ke localStorage
+            localStorage.setItem("lang", lang);
+         });
+      });
+   </script>
+
+</body>
+
+</html>

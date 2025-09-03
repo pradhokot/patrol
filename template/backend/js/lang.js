@@ -1,35 +1,79 @@
+// lang.js
 const translations = {
-  id: {
-    copyright: "Seluruh hak dilindungi"
-  },
-  en: {
-    copyright: "All rights reserved"
-  }
+   en: { 
+      textAuto: "auto",
+      textDark: "dark",
+      textLight: "light",
+      textMyAccount: "my account",
+      textSignIn: "sign in",
+      textSignUp: "sign up",
+      textSignOut: "sign out",
+      textDashboard: "dashboard",
+      textCheckpoint: "checkpoint",
+      textGuard: "guard",
+      textReport: "report",
+      textSchedule: "schedule",
+      textTask: "task",
+      navlangTitle: "english",
+      copyright: "All rights reserved",
+      developBy: "Developed by"
+   },
+   id: { 
+      textAuto: "otomatis",
+      textDark: "gelap",
+      textLight: "terang",
+      textMyAccount: "akun saya",
+      textSignIn: "masuk",
+      textSignUp: "mendaftar",
+      textSignOut: "keluar",
+      textDashboard: "dasbor",
+      textCheckpoint: "pos pemeriksaan",
+      textGuard: "penjaga",
+      textReport: "laporan",
+      textSchedule: "jadwal",
+      textTask: "tugas",
+      navlangTitle: "indonesia",
+      copyright: "Semua hak dilindungi",
+      developBy: "Dikembangkan oleh"
+   }
 };
 
-// Fungsi translasi
+// Tambahan mapping bendera
+const flags = {
+   en: "https://flagcdn.com/w40/us.png",
+   id: "https://flagcdn.com/w40/id.png"
+};
+
+// Fungsi untuk apply translasi
 function applyTranslations(lang) {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
-    }
-  });
-  // ubah label dropdown aktif
-  document.getElementById("currentLang").textContent =
-    lang === "id" ? "Indonesia" : "English";
+   $("[data-i18n]").each(function () {
+      const key = $(this).data("i18n");
+      if (translations[lang] && translations[lang][key]) {
+         $(this).text(translations[lang][key]);
+      }
+   });
+
+   // Ubah label + bendera dropdown utama
+   $("#currentLang").text(translations[lang].navlangTitle);
+   $("#currentFlag").attr("src", flags[lang]);
 }
 
-// Event listener untuk dropdown
-document.querySelectorAll("#dropdownLang .dropdown-item").forEach(item => {
-  item.addEventListener("click", e => {
-    e.preventDefault();
-    const lang = item.getAttribute("data-lang");
-    localStorage.setItem("selectedLang", lang); // simpan pilihan bahasa
-    applyTranslations(lang);
-  });
-});
+$(function () {
+   // Cek apakah ada bahasa tersimpan di localStorage
+   let savedLang = localStorage.getItem("lang") || "id";
 
-// Default bahasa, cek localStorage dulu
-const savedLang = localStorage.getItem("selectedLang") || "en";
-applyTranslations(savedLang);
+   // Terapkan bahasa awal
+   applyTranslations(savedLang);
+
+   // Event klik dropdown item
+   $("[data-lang]").on("click", function (e) {
+      e.preventDefault();
+      const lang = $(this).data("lang");
+
+      // Terapkan translasi
+      applyTranslations(lang);
+
+      // Simpan ke localStorage
+      localStorage.setItem("lang", lang);
+   });
+});

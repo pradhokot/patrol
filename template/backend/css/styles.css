@@ -28,8 +28,19 @@ header[aria-label="page header"] {
    z-index: 1020;
 }
 
+#accordionMenu {
+   --bs-accordion-border-width: 0;
+   --bs-accordion-border-radius: 0;
+   --bs-accordion-inner-border-radius: 0;
+   /* --bs-accordion-btn-padding-x: 0; */
+}
+
 #accordionMenu .accordion-button svg {
    fill: #1189cc;
+}
+
+.accordion-button.link::after {
+   display: none;
 }
 
 @media (min-width: 992px) {
@@ -45,5 +56,17 @@ header[aria-label="page header"] {
    .navbar-brand,
    #accordionMenu {
       min-width: var(--sidebar-width);
+   }
+
+   #accordionMenu {
+      --bs-accordion-border-width: var(--bs-border-width);
+      --bs-accordion-border-radius: var(--bs-border-radius);
+      --bs-accordion-btn-padding-x: 1.25rem;
+      --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+   }
+
+   #accordionMenu,
+   #accordionMenu .accordion-button {
+      font-size: small;
    }
 }
