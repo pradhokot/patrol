@@ -1,6 +1,8 @@
 // lang.js
 const translations = {
    en: { 
+      textCancel: "cancel",
+      textRecent: "recent",
       textAuto: "auto",
       textDark: "dark",
       textLight: "light",
@@ -19,6 +21,8 @@ const translations = {
       copyright: "All rights reserved"
    },
    id: { 
+      textCancel: "batal",
+      textRecent: "riwayat",
       textAuto: "otomatis",
       textDark: "gelap",
       textLight: "terang",
