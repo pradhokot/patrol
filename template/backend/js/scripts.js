@@ -1,9 +1,9 @@
 $(document).ready(function () {
    if ($(window).width() >= 992) {
-      $('#offcanvasMenu .offcanvas-header').remove();
+      $('#offcanvasMenu .offcanvas-header, .nav-corner, .navbar-toggler').remove();
       $('.navbar-collapse').show();
    } else {
-      $('#offcanvasMenu .offcanvas-header').show();
+      $('#offcanvasMenu .offcanvas-header, .nav-corner, .navbar-toggler').show();
       $('.navbar-collapse').remove();
    }
 });

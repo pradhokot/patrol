@@ -1,6 +1,6 @@
 document.writeln(`
-   <div class="dropdown">
-      <a role="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)" id="bd-theme" href="#dropdownTheme" class="nav-link d-flex align-items-center text-capitalize text-reset h-100 dropdown-toggle">
+   <div class="dropdown h-100">
+      <a role="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)" id="bd-theme" href="#dropdownTheme" class="nav-link d-flex align-items-center text-capitalize text-reset h-100 dropdown-toggle px-2">
          <i class="theme-icon-active">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-circle-half d-flex" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/> </svg>
          </i>

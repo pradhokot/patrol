@@ -1,6 +1,6 @@
 document.writeln(`
-   <div class="dropdown">
-      <a role="button" data-bs-toggle="dropdown" href="#dropdownLang" class="nav-link d-flex align-items-center gap-2 text-capitalize text-reset h-100 dropdown-toggle">
+   <div class="dropdown h-100">
+      <a role="button" data-bs-toggle="dropdown" href="#dropdownLang" class="nav-link d-flex align-items-center gap-2 text-capitalize text-reset h-100 dropdown-toggle px-2">
          <img id="currentFlag" src="https://flagcdn.com/w40/us.png" alt="US English" width="16" height="12">
          <span id="currentLang" class="link-text" data-i18n="navlangTitle">english</span>
       </a>
