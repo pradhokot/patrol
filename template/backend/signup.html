@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>PATROL &bull; Sign Up</title>
+   <link rel="shortcut icon" href="../../assets/img/icon-patrol.ico" type="image/x-icon">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="../../assets/font/Gotham/Gotham.css">
+   <!-- <style>*{outline: solid 1px green;}</style> -->
+   <style>
+      body {
+         min-height: 100dvh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 1rem;
+         position: relative;
+      }
+
+      img[alt="background images"] {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         opacity: .25;
+      }
+   </style>
+</head>
+<body>
+
+   <img src="../../assets/img/bg.jpg" alt="background images">
+
+   <div class="card py-4 shadow" style="min-width: 10rem;">
+      <div class="card-header text-center bg-transparent border-0 mb-3">
+         <img src="../../assets/img/patrol-light.png" alt="PATROL logo" width="100%" height="auto" style="max-width: 8rem;">
+      </div>
+      <div class="card-body">
+         <form action="" class="d-flex flex-column gap-3">
+            <div class="form-group">
+               <!-- <label for="" class="form-label small"></label> -->
+               <input type="text" class="form-control" placeholder="User Name" required>
+            </div>
+            <div class="form-group">
+               <!-- <label for="" class="form-label small"></label> -->
+               <input type="email" class="form-control" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+               <!-- <label for="" class="form-label small"></label> -->
+               <input type="number" class="form-control" placeholder="NIP" required>
+            </div>
+            <div class="form-group d-flex flex-column gap-2 mb-4">
+               <!-- <label for="" class="form-label small">Type Your Password</label> -->
+               <div class="input-group">
+                  <input type="password" class="form-control border-end-0" placeholder="Password" required>
+                  <button class="btn border border-start-0">
+                     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill d-flex" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/></svg> -->
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill d-flex" viewBox="0 0 16 16"><path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/><path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/></svg>
+                  </button>
+               </div>
+               <!-- <label for="" class="form-label small">Type Your Password</label> -->
+               <div class="input-group">
+                  <input type="password" class="form-control border-end-0" placeholder="Confirm Password" required>
+                  <button class="btn border border-start-0">
+                     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill d-flex" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/></svg> -->
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash-fill d-flex" viewBox="0 0 16 16"><path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/><path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/></svg>
+                  </button>
+               </div>
+            </div>
+            <a href="signin.html" class="btn btn-lg btn-primary">Sign Up</a>
+            <div>
+               <p class="text-center">
+                  Already have an account? <a href="signin.html">Sign In</a>
+               </p>
+            </div>
+            <div>
+               <div class="valid-feedback">
+                  Looks good!
+               </div>
+               <div class="invalid-feedback">
+                  Wrong Username or Password.
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <script src="js/jquery-3.7.1.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/themeSwitcher.js"></script>
+</body>
+</html>
