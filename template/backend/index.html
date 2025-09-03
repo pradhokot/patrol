@@ -53,7 +53,7 @@
    
                <aside aria-label="sidebar" class="sticky-top" style="top: 1rem;">
                   <div id="offcanvasMenu" class="offcanvas-lg offcanvas-end">
-                     <div class="offcanvas-header border-bottom" style="background-color: var(--background);">
+                     <div class="offcanvas-header">
                         <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
                         <button type="button" class="btn-close ms-0 me-auto" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-label="close menu"></button>
                         <div class="offcanvas-title">
@@ -99,7 +99,6 @@
                                     </div>
                                  </div>
                               </li>
-                              <li class="d-lg-none"><hr class="m-0"></li>
                               <li class="accordion-item">
                                  <h5 class="accordion-header">
                                     <a role="button" data-bs-toggle="collapse" href="#collapseMenuCheckpoint" class="accordion-button text-uppercase text-reset text-decoration-none d-flex align-items-center gap-2 collapsed">
@@ -125,7 +124,6 @@
                                     </div>
                                  </div>
                               </li>
-                              <li class="d-lg-none"><hr class="m-0"></li>
                               <li class="accordion-item">
                                  <h5 class="accordion-header">
                                     <a role="button" data-bs-toggle="collapse" href="#collapseMenuGuard" class="accordion-button text-uppercase text-reset text-decoration-none d-flex align-items-center gap-2 collapsed">
@@ -151,7 +149,6 @@
                                     </div>
                                  </div>
                               </li>
-                              <li class="d-lg-none"><hr class="m-0"></li>
                               <li class="accordion-item">
                                  <h5 class="accordion-header">
                                     <a role="button" data-bs-toggle="collapse" href="#collapseMenuReport" class="accordion-button text-uppercase text-reset text-decoration-none d-flex align-items-center gap-2 collapsed">
@@ -177,7 +174,6 @@
                                     </div>
                                  </div>
                               </li>
-                              <li class="d-lg-none"><hr class="m-0"></li>
                               <li class="accordion-item">
                                  <h5 class="accordion-header">
                                     <a role="button" data-bs-toggle="collapse" href="#collapseMenuSchedule" class="accordion-button text-uppercase text-reset text-decoration-none d-flex align-items-center gap-2 collapsed">
@@ -203,7 +199,6 @@
                                     </div>
                                  </div>
                               </li>
-                              <li class="d-lg-none"><hr class="m-0"></li>
                               <li class="accordion-item">
                                  <h5 class="accordion-header">
                                     <a role="button" data-bs-toggle="collapse" href="#collapseMenuTask" class="accordion-button text-uppercase text-reset text-decoration-none d-flex align-items-center gap-2 collapsed">
@@ -266,10 +261,10 @@
          <div class="modal-content">
             <div class="modal-header border-0">
                <div class="input-group">
-                  <button class="btn btn-lg border-secondary border-3 border-end-0">
+                  <button class="btn border-secondary border-3 border-end-0">
                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search d-flex" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
                   </button>
-                  <input type="search" class="form-control form-control-lg border-secondary border-3 border-start-0 ps-0" placeholder="Search">
+                  <input type="search" class="form-control border-secondary border-3 border-start-0 ps-0" placeholder="Search">
                </div>
                <button type="button" class="btn text-capitalize border-0 shadow-none" data-bs-dismiss="modal" aria-label="Close" data-i18n="textCancel">
                   cancel
@@ -281,7 +276,7 @@
                   <li class="list-group-item d-flex align-items-center">
                      <div class="flex-grow-1 d-flex align-items-center gap-2">
                         <i class="list-icon">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-arrow-counterclockwise d-flex" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise d-flex" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
                         </i>
                         <span class="list-text"><small>Lorem ipsum dolor</small></span>
                      </div>
@@ -295,7 +290,7 @@
                   <li class="list-group-item d-flex align-items-center">
                      <div class="flex-grow-1 d-flex align-items-center gap-2">
                         <i class="list-icon">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-arrow-counterclockwise d-flex" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise d-flex" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
                         </i>
                         <span class="list-text"><small>Lorem ipsum dolor</small></span>
                      </div>
@@ -309,7 +304,7 @@
                   <li class="list-group-item d-flex align-items-center">
                      <div class="flex-grow-1 d-flex align-items-center gap-2">
                         <i class="list-icon">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-arrow-counterclockwise d-flex" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise d-flex" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
                         </i>
                         <span class="list-text"><small>Lorem ipsum dolor</small></span>
                      </div>
@@ -323,7 +318,7 @@
                   <li class="list-group-item d-flex align-items-center">
                      <div class="flex-grow-1 d-flex align-items-center gap-2">
                         <i class="list-icon">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-arrow-counterclockwise d-flex" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise d-flex" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
                         </i>
                         <span class="list-text"><small>Lorem ipsum dolor</small></span>
                      </div>
