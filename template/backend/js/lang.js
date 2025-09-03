@@ -15,8 +15,8 @@ const translations = {
       textSchedule: "schedule",
       textTask: "task",
       navlangTitle: "english",
-      copyright: "All rights reserved",
       developBy: "Developed by"
+      copyright: "All rights reserved",
    },
    id: { 
       textAuto: "otomatis",
@@ -33,8 +33,8 @@ const translations = {
       textSchedule: "jadwal",
       textTask: "tugas",
       navlangTitle: "indonesia",
-      copyright: "Semua hak dilindungi",
       developBy: "Dikembangkan oleh"
+      copyright: "Semua hak dilindungi",
    }
 };
 
