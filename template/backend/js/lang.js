@@ -27,7 +27,7 @@ const translations = {
       textSignUp: "mendaftar",
       textSignOut: "keluar",
       textDashboard: "dasbor",
-      textCheckpoint: "pos pemeriksaan",
+      textCheckpoint: "pos pantau",
       textGuard: "penjaga",
       textReport: "laporan",
       textSchedule: "jadwal",
